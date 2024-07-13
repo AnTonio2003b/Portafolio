@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <header>
+    <div class="container">
+        <h1>Mi Blong Personal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav> 
+    </div>
+   </header> 
+
+   <main>
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenido a mi Blog Personal</h2>
+            <p>¡qui puedes encontrar articulos interesantes sobre temas variados</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2>Ultimas entradas</h2>
+            <div class="Blog-post">
+                <h3>Titulo del primer Articulo</h3>
+                <p class="meta">Publicado el 1 de enero del 2024</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste soluta esse harum ipsa velit ipsum sequi eum provident distinctio excepturi illo libero quo tempora, atque non cum minima facilis?</p>
+                <a href="entrada1.html" class="button">Leer Mas</a>
+                <hr>
+            </div>
+
+            <div class="Blog-post">
+                <h3>Titulo del segundo articulo</h3>
+                <p class="meta">Publicado el 15  de Febrero de 2024</p>
+                <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <a href="entrada2.html" class="button">Leer Mas</a>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section id="acerca">
+        <div class="container">
+            <h2>Acerca de Mí</h2>
+            <p>Una breve descripcion sobre quien soy y mis intereses. </p>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme enviandome un mensaje a traves de este formulario</p>
+            <form action="enviar.php" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo Electronico" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+   </main>
+
+   <footer>
+    <div class="container">
+        <p>&copy; 2024 - Todos los derechos reservados</p>
+    </div>
+   </footer>
+
+   <script src="scripts.js"></script>
+
+</body>
+</html>
